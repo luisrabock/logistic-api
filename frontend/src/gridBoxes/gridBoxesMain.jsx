@@ -19,12 +19,11 @@ export default class Dashboard extends Component {
     this.handleClear = this.handleClear.bind(this);
     this.refresh();
   }
-  /*
   refresh() {
     axios.get(URL)
       .then(resp => this.setState(console.log(resp.data)));
   }
-*/
+
   handleSearch() {
     this.refresh(this.state.nota);
   }
@@ -39,12 +38,12 @@ export default class Dashboard extends Component {
   render() {
     return (
       <section className="content">
-        <GridBoxesHeader name="Dashboard" small=" Entregas" />
+        <GridBoxesHeader name="Dashboard" small=" volumes faturados" />
         <GridBoxesForm
           handleChange={this.handleChange}
           handleSearch={this.handleSearch}
           handleClear={this.handleClear}
-          placeholder="Busca por NF"
+          placeholder="Busca por número de nota fiscal"
         />
       </section>
     );
