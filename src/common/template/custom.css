@@ -1,0 +1,94 @@
+.main-footer {
+  position: fixed;
+  bottom:0px;
+  width:100%;
+}           
+
+button {
+  margin-left: 5px;
+}
+
+.table-actions {
+  width: 150px;
+}
+
+.skin-blue .main-header .navbar {
+  background-color: #34495e!important;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #34495e!important;
+}
+.skin-blue .table-bordered  {
+  background: #34495e;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #34495e!important;
+}
+.skin-blue .table {
+  background:#fff;
+  width:100%
+}
+
+#root, #app, #map {
+  height: 100%;
+}
+
+#state {
+  width: 200px;
+  float: left;
+}
+
+#map {
+  margin-left: 200px;
+}
+
+body{
+  padding-bottom:40px;
+}
+
+.todoForm {
+  width: 50%;
+}
+
+.teste {
+  background-position:center!important;
+  display: flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  display:block!important;
+  text-align:center!important;
+  margin:0 auto!important;
+}
+
+.testetab {
+  padding: 50px!important;
+}
+
+.table1 {
+  overflow: auto!important;
+  display: block!important;
+  table-layout: auto!important;
+  }
+
+  .table {
+    border: 0.5px solid #ddd!important;
+  }
+  .table-bordered > thead > tr > th,
+  .table-bordered > tbody > tr > th,
+  .table-bordered > tfoot > tr > th,
+  .table-bordered > thead > tr > td,
+  .table-bordered > tbody > tr > td,
+  .table-bordered > tfoot > tr > td {
+     border: 0.5px solid #ddd!important;
+  }
+
+th {
+    text-align: center!important
+}
+
+td {
+  text-align: center!important
+}
+

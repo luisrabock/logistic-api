@@ -1,0 +1,8 @@
+/* eslint react/prop-types: 0 */
+import React from 'react';
+
+export default props => (
+  <section className="content-header">
+    <h1>{props.title}</h1>
+  </section>
+);
