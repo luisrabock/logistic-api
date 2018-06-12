@@ -5,6 +5,6 @@ import MenuTree from './menuTree';
 
 export default () => (
   <ul className="sidebar-menu">
-    <MenuItem path="#/boxes" label="Volumes" icon="dropbox" />
+    <MenuItem path="#/boxes" label="Volumes faturados" icon="dropbox" />
   </ul>
 );

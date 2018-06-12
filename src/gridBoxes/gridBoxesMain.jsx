@@ -8,20 +8,27 @@ import Row from '../common/layout/row';
 
 
 const URL = 'http://localhost:3300/caixas/';
+const URL_SUM = 'http://localhost:3300/caixas/sum';
 
 export default class Dashboard extends Component {
   constructor(props) {
     super(props);
-    this.state = { data: '' };
+    this.state = { data: '', sum: '' };
 
     this.handleSearch = this.handleSearch.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleClear = this.handleClear.bind(this);
     this.refresh();
+    this.refreshSum();
   }
   refresh() {
     axios.get(URL)
       .then(resp => this.setState({ ...this.state, data: resp.data }));
+  }
+
+  refreshSum() {
+    axios.get(URL_SUM)
+      .then(resp => this.setState({ ...this.state, sum: resp.data }));
   }
 
   handleSearch() {
@@ -48,6 +55,7 @@ export default class Dashboard extends Component {
         <Row>
           <GridBoxesData
             list={this.state.data}
+            sum={this.state.sum}
           />
         </Row>
       </section>
